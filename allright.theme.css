@@ -5,13 +5,8 @@
   * @description ha ha
  */
 
-/* 
-  TO USE THE THEME WITH THE DEFAULT MEMBER LIST:
-  → Comment out the first @import line below.
-  → Then, uncomment the second @import line.
-*/
+
 @import url('https://devevil99.github.io/devevil/BetterDiscordAddons/Theme/Dark+/Dark+.theme.css');
-/*@import url('https://devevil99.github.io/devevil/BetterDiscordAddons/Theme/Dark%2B/Dark%2B-Default-Member-List.css');*/
 
 
 :root {
