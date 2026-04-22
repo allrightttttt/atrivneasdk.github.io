@@ -1754,3 +1754,16 @@ button.button__67645 .lottieIcon__5eb9b svg path {
   background-color: var(--darkplus-bg);
   color: var(--darkplus-links);
 }
+
+#app-mount {
+    background-image: var(--darkplus-bg) !important;
+    background-size: cover !important;     /* Растягивает во весь экран */
+    background-position: center !important; /* Центрирует анимацию */
+    background-repeat: no-repeat !important;
+}
+
+/* Делаем интерфейс прозрачным, чтобы видеть гифку */
+.app_bd26cc, .bg_d4b370 {
+    background: rgba(0, 0, 0, 0.4) !important; /* Затемнение 40%, чтобы текст читался */
+}
+
