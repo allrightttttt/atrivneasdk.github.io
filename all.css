@@ -5,7 +5,7 @@
   --darkplus-bg: url("https://ibb.co/RTs1SHgc");
   
   /* Прозрачность фона (от 0 до 1, где 0.5 — полупрозрачный) */
-  --darkplus-bg-opacity: 0.5; 
+  --darkplus-bg-opacity: 1; 
   --darkplus-bg: #212121;
   --darkplus-bg2: #302f2f;
   --darkplus-sec: #bb86fc;
