@@ -1755,12 +1755,35 @@ button.button__67645 .lottieIcon__5eb9b svg path {
   color: var(--darkplus-links);
 }
 
+/* 1. Устанавливаем единый фон на всё окно */
 #app-mount {
-    background-image: var(--darkplus-bg) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important; /* Важно: приклеивает фон, чтобы он не ехал */
+    background: var(--darkplus-bg) center/cover no-repeat fixed !important;
+}
+
+/* 2. Делаем ВСЕ слои прозрачными, чтобы они не дублировали фон */
+.bg_d4b370, 
+.app_bd26cc, 
+.sidebar_a4d651,     /* Список каналов */
+.container_ee9d1a,   /* Внутренний контейнер каналов */
+.members_cbd271,     /* Список участников */
+.container_cbd271,   /* Контейнер списка участников */
+.chat_a7d72e,        /* Весь чат */
+.container_ce3058,   /* Главный контейнер */
+.container_adcaac    /* Еще один слой фона */
+{
+    background: transparent !important;
+}
+
+/* 3. Добавляем общее затемнение, чтобы текст не сливался */
+.app_bd26cc {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 4. Затемняем конкретно зону чата для читаемости */
+.chatContent_a7d72e {
+    background: rgba(0, 0, 0, 0.5) !important;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 /* Полностью очищаем лишние фоны, которые могут дублироваться */
