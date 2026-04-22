@@ -945,14 +945,14 @@ button[aria-label="Send a gift"] {
 }
 
 .title_c38106:after {
-    content: "allright.tech"; /* Напишите здесь свое название */
+    content: "allright.tech";
     position: absolute;
-    left: 12px; /* Небольшой отступ слева */
+    left: 30px;
     font-size: 12px;
     font-weight: bold;
-    color: #9446ff; /* Цвет текста */
+    color: #9446ff;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: "Lignum Melle", sans-serif; 
     white-space: nowrap;
 }
 
