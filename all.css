@@ -945,13 +945,13 @@ button[aria-label="Send a gift"] {
 }
 
 .title_c38106:after {
-    content: "allright.tec";
+    content: "allright.tech";
     position: absolute;
-    left: 30px;
-    font-size: 10px;
+    left: 50px;
+    font-size: 14px;
     font-weight: normal;
     color: #9446ff;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: "Lignum Melle", sans-serif !important; 
     white-space: nowrap;
 }
