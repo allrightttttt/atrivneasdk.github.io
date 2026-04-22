@@ -1761,23 +1761,23 @@ button.button__67645 .lottieIcon__5eb9b svg path {
 }
 
 /* 2. Делаем ВСЕ слои прозрачными, чтобы они не дублировали фон */
+/* 2. Делаем слои прозрачными и добавляем ОДИН общий слой затемнения */
 .bg_d4b370, 
-.app_bd26cc, 
-.sidebar_a4d651,     /* Список каналов */
-.container_ee9d1a,   /* Внутренний контейнер каналов */
-.members_cbd271,     /* Список участников */
-.container_cbd271,   /* Контейнер списка участников */
-.chat_a7d72e,        /* Весь чат */
-.container_ce3058,   /* Главный контейнер */
-.container_adcaac    /* Еще один слой фона */
-{
+.sidebar_a4d651, 
+.container_ee9d1a, 
+.members_cbd271, 
+.container_cbd271,
+.container_adcaac {
     background: transparent !important;
 }
 
-/* 3. Добавляем общее затемнение, чтобы текст не сливался */
+/* Оставляем затемнение только на одном главном слое */
 .app_bd26cc {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background: rgba(0, 0, 0, 0.4) !important; 
 }
+
+
+
 
 /* 4. Затемняем конкретно зону чата для читаемости */
 .chatContent_a7d72e {
@@ -1786,8 +1786,5 @@ button.button__67645 .lottieIcon__5eb9b svg path {
     border-radius: 10px;
 }
 
-/* Полностью очищаем лишние фоны, которые могут дублироваться */
-.app_bd26cc, .bg_d4b370 {
-    background: rgba(0, 0, 0, 0.4) !important; /* Оставляем только небольшое затемнение */
-}
+
 
