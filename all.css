@@ -1,16 +1,14 @@
 
 :root {
-
-  /* Ссылка на твой фон */
-  --darkplus-bg: url("https://tenor.com/view/galaxy-space-nebula-universe-stars-gif-18269529");
-  
-  /* Прозрачность фона (от 0 до 1, где 0.5 — полупрозрачный) */
+ --darkplus-bg: url("https://media1.tenor.com/m/DVzVKfkHYJcAAAAd/galaxy-space.gif");
+  --darkplus-bg-opacity: 1;
+  --darkplus-home-icon: url("https://cdn.discordapp.com/attachments/961548162919710763/1496500558138314873/nebula-space-gif-nebula-space-cosmic.gif?ex=69ea1c40&is=69e8cac0&hm=71ca4fed03eb9e1024d652e88a0360ef0149bc255ec41bba9eb75e006f903149")
+	  
   --darkplus-bg-opacity: 1; 
   --darkplus-bg: #212121;
   --darkplus-bg2: #302f2f;
   --darkplus-sec: #bb86fc;
   --darkplus-links: #cdaef3;
-  --darkplus-home-icon: url(https://i.imgur.com/RvlNQ7k.png);
   --watermark-filter-invert: 0%;
   --watermark-filter-sepia: 50%;
   --watermark-filter-saturate: 3000%;
@@ -1755,36 +1753,22 @@ button.button__67645 .lottieIcon__5eb9b svg path {
   color: var(--darkplus-links);
 }
 
-/* 1. Устанавливаем единый фон на всё окно */
+/* 2. Устанавливаем ОДИН фон на всё окно */
 #app-mount {
     background: var(--darkplus-bg) center/cover no-repeat fixed !important;
 }
 
-/* 2. Делаем ВСЕ слои прозрачными, чтобы они не дублировали фон */
-/* 2. Делаем слои прозрачными и добавляем ОДИН общий слой затемнения */
+/* 3. УБИРАЕМ размножение фона в панелях (делаем их прозрачными) */
 .bg_d4b370, 
-.sidebar_a4d651, 
-.container_ee9d1a, 
-.members_cbd271, 
-.container_cbd271,
-.container_adcaac {
+.app_bd26cc, 
+.sidebar_a4d651,      /* Список каналов */
+.container_ee9d1a,    /* Контейнер каналов */
+.members_cbd271,      /* Список участников */
+.container_cbd271,    /* Контейнер участников */
+.chat_a7d72e,         /* Область чата */
+.container_ce3058,    /* Главный контейнер */
+.content_a7d72e,      /* Контент чата */
+.panels_a4d651        /* Панель профиля внизу слева */
+{
     background: transparent !important;
 }
-
-/* Оставляем затемнение только на одном главном слое */
-.app_bd26cc {
-    background: rgba(0, 0, 0, 0.4) !important; 
-}
-
-
-
-
-/* 4. Затемняем конкретно зону чата для читаемости */
-.chatContent_a7d72e {
-    background: rgba(0, 0, 0, 0.5) !important;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-
-
